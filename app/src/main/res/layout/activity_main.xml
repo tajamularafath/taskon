@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="Radio Button"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_qs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Select Your Favourite Language"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_qs"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qs">
+
+        <RadioButton
+            android:id="@+id/rb_kotlin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin" />
+
+        <RadioButton
+            android:id="@+id/rb_java2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/java" />
+
+        <RadioButton
+            android:id="@+id/rb_python3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/python" />
+
+        <RadioButton
+            android:id="@+id/rb_php4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/php" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tick the correct Answer"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_qs"
+        app:layout_constraintTop_toBottomOf="@+id/rg_1" />
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:text="Web Application"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Development"
+        app:layout_constraintTop_toBottomOf="@+id/cb_1"
+        app:layout_constraintStart_toStartOf="@+id/cb_1"
+        android:layout_marginEnd="63dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Application"
+        app:layout_constraintTop_toBottomOf="@+id/cb_2"
+        app:layout_constraintStart_toStartOf="@+id/cb_2"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        />
+
+    <Button
+        android:id="@+id/b_nextbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintTop_toBottomOf="@+id/cb_3"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/b_select"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="80dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginEnd="80dp"-->
+    <!--        android:text="Select"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/rg_1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rg_1" />-->
+

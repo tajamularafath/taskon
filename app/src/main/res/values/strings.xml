@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task On</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="java">Java</string>
+    <string name="python">Python</string>
+    <string name="php">PHP</string>
+    <string name="next">Next</string>
+    <string name="foodName">Veg-Food Factory</string>
+</resources>
